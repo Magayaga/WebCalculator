@@ -1,0 +1,148 @@
+<!--
+    WebCalculator (v1.0) - Cyril John Magayaga
+    --------------------------------------------------------------------------
+    GitLab: https://gitlab.com/cyrilmagayaga/webcalculator
+    --------------------------------------------------------------------------
+    WebCalculator is a simple web-based scientific calculator was created and
+    developed by Cyril John Magayaga (GitLab: https://gitlab.com/cyrilmagayaga
+    and GitHub: https://github.com/magayaga)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/WebCalculator.svg">
+    <title>WebCalculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <!--1st row-->
+            <button id="pi" class="button-dark-gray">π</button>
+            <button id="e" class="button-dark-gray"><i>e</i></button>
+            <button id="γ" class="button-dark-gray"><i>γ</i></button>
+            <button class="button-gray">(</button>
+            <button class="button-gray">)</button>
+            <button id="percentage" class="button-gray">%</button>
+            <button id="clear" class="button-red">C</button>
+            <button id="backspace" class="button-red">⌫</button>
+            <!--2nd row-->
+            <button id="φ" class="button-dark-gray"><i>φ</i></button>
+            <button id="α" class="button-dark-gray"><i>α</i></button>
+            <button id="δ" class="button-dark-gray"><i>δ</i></button>
+            <button id="ζ" class="button-dark-gray"><i>ζ</i></button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button id="divide" class="button-gray">/</button>
+            <!--3rd row-->
+            <button id="factorial" class="button-dark-gray">x!</button>
+            <button id="exponential" class="button-dark-gray">e^x</button>
+            <button id="power" class="button-dark-gray">x^2</button>
+            <button id="sqrt" class="button-dark-gray">√</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button id="multiply" class="button-gray">*</button>
+            <!--4th row-->
+            <button id="sin" class="button-dark-gray"><i>sin</i></button>
+            <button id="cos" class="button-dark-gray"><i>cos</i></button>
+            <button id="tan" class="button-dark-gray"><i>tan</i></button>
+            <button id="³√" class="button-dark-gray">³√</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button id="subtract" class="button-gray">-</button>
+            <!--5th row-->
+            <button id="sec" class="button-dark-gray"><i>sec</i></button>
+            <button id="csc" class="button-dark-gray"><i>csc</i></button>
+            <button id="cot" class="button-dark-gray"><i>cot</i></button>
+            <button id="in" class="button-dark-gray"><i>In</i></button>
+            <button>0</button>
+            <button>.</button>
+            <button id="equals" class="button-orange">=</button>
+            <button id="add" class="button-gray">+</button>
+            
+        </div>
+    </div>
+    <button id="dark-mode-toggle" class="dark-mode-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="auto" fill="currentColor" class="light" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+          </svg>
+    </button>
+    <p class="paragraph"><a class="link" href="https://gitlab.com/cyrilmagayaga/WebCalculator">
+        <svg width="20" height="20" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M120 85.973C120 99.188 109.188 110 95.973 110H24.027C10.812 110 0 99.188 0 85.973V24.027C0 10.812 10.812 0 24.027 0H95.972C109.188 0 120 10.812 120 24.027V85.973Z" fill="url(#paint0_linear_606_18)" />
+            <path d="M95.973 110H24.027C10.812 110 0 99.1879 0 85.9729V95.9729C0 109.188 10.812 120 24.027 120H95.972C109.188 120 120 109.188 120 95.9729V85.9729C120 99.1879 109.188 110 95.973 110Z" fill="#696163" />
+            <path d="M34.3014 24.6762H46.3747L45.5804 31.1894H34.3014V43.6598H26.9939V31.1894H15L15.7149 24.6762H26.9939V13H34.3014V24.6762Z" fill="url(#paint1_linear_606_18)" />
+            <path d="M103.729 24.6762L102.538 31.1894H70.3687L71.6395 24.6762H81.6924H103.729Z" fill="url(#paint2_linear_606_18)" />
+            <path
+                d="M29.6945 86.0499L20.7189 95.0255L16.5886 90.8952L25.5641 81.9196L16.5886 73.0235L20.7189 68.8931L29.6945 77.7893L38.7495 68.7343L42.8798 72.8646L33.8248 81.9196L42.8798 91.054L38.8289 95.1049L29.6945 86.0499Z"
+                fill="url(#paint3_linear_606_18)"
+            />
+            <path
+                d="M105 79.9339L103.729 86.4471H71.5601L72.7516 79.9339H105ZM83.8717 70.0051C83.8717 69.3697 84.0041 68.7343 84.2689 68.0988C84.5336 67.4634 84.9043 66.9074 85.3809 66.4308C85.8575 65.9013 86.387 65.5041 86.9695 65.2394C87.6049 64.9217 88.2668 64.7628 88.9552 64.7628C90.279 64.7628 91.4705 65.3188 92.5295 66.4308C93.6416 67.4899 94.1976 68.6813 94.1976 70.0051C94.1976 70.6935 94.0387 71.3555 93.721 71.9909C93.4562 72.5734 93.0591 73.1029 92.5295 73.5795C92.053 74.0561 91.497 74.4267 90.8615 74.6915C90.2261 74.9563 89.5906 75.0886 88.9552 75.0886C87.5784 75.0886 86.387 74.5856 85.3809 73.5795C84.3748 72.5734 83.8717 71.3819 83.8717 70.0051ZM83.8717 96.6935C83.8717 96.0581 84.0041 95.4226 84.2689 94.7872C84.5336 94.1518 84.9043 93.5958 85.3809 93.1192C85.8575 92.5896 86.387 92.1925 86.9695 91.9277C87.6049 91.61 88.2668 91.4512 88.9552 91.4512C90.279 91.4512 91.4705 92.0072 92.5295 93.1192C93.6416 94.1782 94.1976 95.3697 94.1976 96.6935C94.1976 97.3819 94.0387 98.0438 93.721 98.6793C93.4562 99.2617 93.0591 99.7913 92.5295 100.268C92.053 100.744 91.497 101.115 90.8615 101.38C90.2261 101.645 89.5906 101.777 88.9552 101.777C87.5784 101.777 86.387 101.274 85.3809 100.268C84.3748 99.2617 83.8717 98.0703 83.8717 96.6935Z"
+                fill="url(#paint4_linear_606_18)"
+            />
+            <path d="M31.3014 21.6762H43.3747L42.5804 28.1894H31.3014V40.6598H23.9939V28.1894H12L12.7149 21.6762H23.9939V10H31.3014V21.6762Z" fill="url(#paint5_linear_606_18)" />
+            <path d="M100.729 21.6762L99.5377 28.1894H67.3687L68.6395 21.6762H78.6924H100.729Z" fill="url(#paint6_linear_606_18)" />
+            <path
+                d="M26.6945 83.0499L17.7189 92.0255L13.5886 87.8952L22.5641 78.9196L13.5886 70.0235L17.7189 65.8931L26.6945 74.7893L35.7495 65.7343L39.8798 69.8646L30.8248 78.9196L39.8798 88.054L35.8289 92.1049L26.6945 83.0499Z"
+                fill="url(#paint7_linear_606_18)"
+            />
+            <path
+                d="M102 76.9339L100.729 83.4471H68.5601L69.7516 76.9339H102ZM80.8717 67.0051C80.8717 66.3697 81.0041 65.7343 81.2689 65.0988C81.5336 64.4634 81.9043 63.9074 82.3809 63.4308C82.8575 62.9013 83.387 62.5041 83.9695 62.2394C84.6049 61.9217 85.2668 61.7628 85.9552 61.7628C87.279 61.7628 88.4705 62.3188 89.5295 63.4308C90.6416 64.4899 91.1976 65.6813 91.1976 67.0051C91.1976 67.6935 91.0387 68.3555 90.721 68.9909C90.4562 69.5734 90.0591 70.1029 89.5295 70.5795C89.053 71.0561 88.497 71.4267 87.8615 71.6915C87.2261 71.9563 86.5906 72.0886 85.9552 72.0886C84.5784 72.0886 83.387 71.5856 82.3809 70.5795C81.3748 69.5734 80.8717 68.3819 80.8717 67.0051ZM80.8717 93.6935C80.8717 93.0581 81.0041 92.4226 81.2689 91.7872C81.5336 91.1518 81.9043 90.5958 82.3809 90.1192C82.8575 89.5896 83.387 89.1925 83.9695 88.9277C84.6049 88.61 85.2668 88.4512 85.9552 88.4512C87.279 88.4512 88.4705 89.0072 89.5295 90.1192C90.6416 91.1782 91.1976 92.3697 91.1976 93.6935C91.1976 94.3819 91.0387 95.0438 90.721 95.6793C90.4562 96.2617 90.0591 96.7913 89.5295 97.2678C89.053 97.7444 88.497 98.1151 87.8615 98.3799C87.2261 98.6446 86.5906 98.777 85.9552 98.777C84.5784 98.777 83.387 98.274 82.3809 97.2678C81.3748 96.2617 80.8717 95.0703 80.8717 93.6935Z"
+                fill="url(#paint8_linear_606_18)"
+            />
+            <defs>
+                <linearGradient id="paint0_linear_606_18" x1="60" y1="0" x2="60" y2="110" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CEC3C6" />
+                    <stop offset="0.4757" stop-color="#AA9B9F" />
+                    <stop offset="0.6639" stop-color="#A09699" />
+                    <stop offset="0.8012" stop-color="#928789" />
+                    <stop offset="0.913" stop-color="#847A7D" />
+                    <stop offset="1" stop-color="#7E7578" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_606_18" x1="85.875" y1="33.8125" x2="60" y2="101.777" gradientUnits="userSpaceOnUse">
+                    <stop />
+                    <stop offset="1" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_606_18" x1="85.875" y1="33.8125" x2="60" y2="101.777" gradientUnits="userSpaceOnUse">
+                    <stop />
+                    <stop offset="1" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_606_18" x1="85.875" y1="33.8125" x2="60" y2="101.777" gradientUnits="userSpaceOnUse">
+                    <stop />
+                    <stop offset="1" />
+                </linearGradient>
+                <linearGradient id="paint4_linear_606_18" x1="85.875" y1="33.8125" x2="60" y2="101.777" gradientUnits="userSpaceOnUse">
+                    <stop />
+                    <stop offset="1" />
+                </linearGradient>
+                <linearGradient id="paint5_linear_606_18" x1="82.875" y1="30.8125" x2="57" y2="98.777" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FB5959" />
+                    <stop offset="1" stop-color="#51669D" />
+                </linearGradient>
+                <linearGradient id="paint6_linear_606_18" x1="82.875" y1="30.8125" x2="57" y2="98.777" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FB5959" />
+                    <stop offset="1" stop-color="#51669D" />
+                </linearGradient>
+                <linearGradient id="paint7_linear_606_18" x1="82.875" y1="30.8125" x2="57" y2="98.777" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FB5959" />
+                    <stop offset="1" stop-color="#51669D" />
+                </linearGradient>
+                <linearGradient id="paint8_linear_606_18" x1="82.875" y1="30.8125" x2="57" y2="98.777" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FB5959" />
+                    <stop offset="1" stop-color="#51669D" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </a></p>
+    <p class="top-paragraph">WebCalculator | 1.0 (August 10, 2023)<br>Created and developed by Cyril John Magayaga</p>
+    <script src="script.js"></script>
+</body>
+</html>
