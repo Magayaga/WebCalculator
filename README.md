@@ -6,4 +6,4 @@ WebCalculator is simple web-based scientific calculator was created and develope
 
 ## Copyright
 
-Copyright (c) 2023 Cyril John Magayaga
+Copyright (c) 2023-2024 Cyril John Magayaga
