@@ -2,7 +2,7 @@
 
 # WebCalculator
 
-WebCalculator is simple web-based scientific calculator was created and developed by [Cyril John Magayaga](https://gitlab.com/cyrilmagayaga).
+WebCalculator is a simple web-based scientific calculator that was created and developed by [Cyril John Magayaga](https://gitlab.com/cyrilmagayaga).
 
 ## Copyright
 
